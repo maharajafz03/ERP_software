@@ -13,7 +13,6 @@ import { useState } from "react";
 
 const Service = () => {
 
-    const [workspace, setworkspace] = useState(<Orders/>)
     return (
         <div className=" flex h-screen">
             

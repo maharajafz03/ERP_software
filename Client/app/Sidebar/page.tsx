@@ -50,7 +50,7 @@ const Service = () => {
     return (
         <div className="flex h-screen">
             {/* Sidebar Menu */}
-            <div className="bg-red-400 w-1/4">
+            <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[20%]">
                 <div className="p-6 mt-8 overflow-auto">
                     <ul className="space-y-4">
                         {/* Set onClick to change the active workspace */}
@@ -108,12 +108,19 @@ const Service = () => {
                         >
                             Human Resources
                         </li>
+                        <div className="bg-lime-300 rounded-lg text-center
+                        ">
+                        <button>create_supplier</button>
+                        </div>
+                        <div className="bg-lime-300 rounded-lg text-center">
+                        <button>create_employer</button>
+                        </div>
                     </ul>
                 </div>
             </div>
 
             {/* Main Content */}
-            <div className="p-6 bg-green-600 overflow-auto w-3/4">
+            <div className="p-6 bg-pink-600 overflow-auto w-full">
                 {/* Render the selected workspace */}
                 {renderWorkspace()}
             </div>

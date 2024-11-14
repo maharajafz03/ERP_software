@@ -6,7 +6,23 @@ const Inventory = () => {
     return (
     <div>
         <div>
-            <h1>hello_from_inventory</h1>
+        <div>
+                <p>SuplierName:</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>PoNumber:</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>ProductQuantity:</p>
+                <input type="text"></input>
+            </div>
+
+            <div>
+                <p>ProductName:</p>
+                <input type="text"></input>
+            </div>
         </div>
     </div>
     )
