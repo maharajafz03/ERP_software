@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* global.css */
+:root {
+    --background: #ffffff;  /* Define your background color */
+    --foreground: #000000;  /* Define your foreground color */
+  }
+  

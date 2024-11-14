@@ -5,7 +5,9 @@
 const Inventory = () => {
     return (
     <div>
-        <h2>Inventory</h2>
+        <div>
+            <h1>hello_from_inventory</h1>
+        </div>
     </div>
     )
 }

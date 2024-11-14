@@ -3,7 +3,7 @@
 const Sales  = () => {
     return (
     <div>
-        <h2>Purchase</h2>
+        <input type="text"></input>
     </div>
     )
 }

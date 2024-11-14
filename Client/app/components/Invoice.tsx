@@ -3,7 +3,9 @@
 const Sales  = () => {
     return (
     <div>
-        <h2>Invoice</h2>
+        <div>
+            <h1>hello_from_invoice</h1>
+        </div>
     </div>
     )
 }
