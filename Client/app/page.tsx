@@ -1,9 +1,8 @@
-import Service from "./components/Services";
 
 export default function Home() {
   return (
     <div className="">
-    <Service/>
+    <h1>Welcome</h1>
     </div>
   );
 }

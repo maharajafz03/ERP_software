@@ -16,7 +16,7 @@ const Service = () => {
     return (
         <div className=" flex h-screen">
             
-            <div className=" bg-red-400">
+            <div className=" bg-red-100">
                 <div className="p-6 mt-8 overflow-auto">
                 <ul className="space-y-4">
 
