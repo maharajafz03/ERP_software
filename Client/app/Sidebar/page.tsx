@@ -13,7 +13,7 @@ import Orders from "../components/Orders";
 import Popupemployer from "./components/Popupemployer";
 import Popupsupplier from "./components/Popupsupplier";
 
-const Service = () => {
+const sidebar = () => {
     const [activeWorkspace, setActiveWorkspace] = useState("orders");
     const [popup, setPopup] = useState(false);
     const [popupSupplier, setPopupSupplier] = useState(false);
@@ -152,4 +152,4 @@ const Service = () => {
     );
 };
 
-export default Service;
+export default sidebar;
