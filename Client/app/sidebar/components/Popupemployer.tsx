@@ -11,28 +11,14 @@ const Popupemployer: React.FC<PopupemployerProps> = ({ onClose }) => {
                 {/* Close button */}
                 <button 
                     onClick={onClose} 
-                    className="absolute top-4 right-4 bg-gray-300 rounded-full p-2 hover:bg-gray-400 focus:outline-none"
+                    className="absolute top-4 right-4 bg-red-500 rounded-lg p-2 hover:bg-green-400 focus:outline-none"
                 >
                     Close
                 </button>
                 
-                {/* Content */}
-                <h1 className="text-2xl font-bold mb-4">EmployerMaster</h1>
                 <div>
-                <p className="text-lg">First Name</p>
-                <input className="bg-purple-300 rounded-lg p-1"></input>
-                </div>
-                <div>
-                <p className="text-lg">LastName</p>
-                <input className="bg-purple-300 rounded-lg p-1"></input>
-                </div>
-                <div>
-                <p className="text-lg">First Name</p>
-                <input className="bg-purple-300 rounded-lg p-1"></input>
-                </div>
-                <div>
-                <p className="text-lg">LastName</p>
-                <input className="bg-purple-300 rounded-lg p-1"></input>
+                    <p>FirstName</p>
+                    <input className="shadow-lg shadow-black"></input>
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
-
-
-
+import React from 'react'
 
 const Payable = () => {
-    return (
+  return (
     <div>
-        <h2>Payable</h2>
+      <div>
+        <p>UDC Number</p>
+        <input></input>
+      </div>
     </div>
-    )
+  )
 }
 
-export default Payable;
+export default Payable
