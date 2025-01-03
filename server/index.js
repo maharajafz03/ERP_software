@@ -21,10 +21,10 @@ const PORT = 4000;
 app.use(express_1.default.json());
 // PostgreSQL connection pool setup
 const pool = new pg_1.Pool({
-    user: 'magaraja',
-    host: 'localhost',
-    database: 'ERP_SOFTWARE',
-    password: 'Blockchaindev03',
+    user: 'magaraja', // Replace with your PostgreSQL username
+    host: 'localhost', // Replace with your host
+    database: 'ERP_SOFTWARE', // Replace with your database name
+    password: 'Blockchaindev03', // Replace with your password
     port: 5432, // Default PostgreSQL port
 });
 pool.connect()
