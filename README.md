@@ -1,2 +1,2 @@
 
-![Desing](image.png)
+![Desing](Client/public/image.png)
