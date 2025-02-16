@@ -24,19 +24,19 @@ const Popupemployer: React.FC<PopupemployerProps> = ({ onClose }) => {
                     </div>
                 </div>
                 <div className="mt-2">
-                    <h3>LegalDetails</h3>
+                    <h3>Tax</h3>
                     <div className="flex justify-between">
                     <input placeholder="Tax Identification Number (TIN)" className="border border-blue-500 shadow-lg p-2 ml-16"></input>
                     <input placeholder="GST/VAT Numbers" className="border border-blue-500 shadow-lg p-2 mr-16"></input>
                     </div>
                 </div>
-                {/* <div className="mt-2">
+                <div className="mt-2">
                     <h3>Domain</h3>
                     <div className="flex justify-between">
                     <input placeholder="Department" className="border border-blue-500 shadow-lg p-2 ml-16"></input>
                     <input placeholder="Role" className="border border-blue-500 shadow-lg p-2 mr-16"></input>
                     </div>
-                </div> */}
+                </div>
                 <div className="mt-2">
                     <h3>Address</h3>
                     <div className="flex justify-between">

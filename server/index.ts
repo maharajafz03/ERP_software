@@ -6,7 +6,6 @@ import { client } from "./dbconfig";
 const app = express();
 const PORT = 4000;
 
-//dancing manajha
 
 // Middleware to parse JSON
 app.use(express.json());
