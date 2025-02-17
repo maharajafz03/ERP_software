@@ -8,6 +8,9 @@ const client = new Pool({
     port: 5432
 });
 
-client.connect()  
+client.connect()
+    .then(() => {
+        console.log('db is connected')
+    })  
 
 export default client;
