@@ -1,23 +1,23 @@
-# Specify the base image
-FROM node:18 AS build
+# Use an official Node.js runtime as the base image
+FROM node:16-alpine
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package files and install dependencies
-COPY package.json package-lock.json ./
+# Copy package.json and package-lock.json first for better cache management
+COPY package*.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the app's source code
+# Copy the rest of the application code
 COPY . .
 
-# Build the application
+# Build the Next.js app
 RUN npm run build
 
-# Use a lightweight web server to serve the app
+# Expose the port on which your app will run
+EXPOSE 3000
 
-# Expose the port the app runs on
-EXPOSE 80
-
-# Start the web server
-CMD ["npm run dev"]
+# Run the app in production mode
+CMD ["npm", "start"]
