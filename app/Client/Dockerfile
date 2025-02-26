@@ -1,5 +1,5 @@
-# Use an official Node.js runtime as the base image
-FROM node:16-alpine
+# Use a newer Node.js version to avoid engine compatibility issues
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package.json and package-lock.json first for better cache management
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies, and set a longer timeout for network issues
+RUN npm install --fetch-timeout=120000
 
 # Copy the rest of the application code
 COPY . .
